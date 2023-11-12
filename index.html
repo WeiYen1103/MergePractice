@@ -12,12 +12,13 @@
 		<!-- Wrapper-->
 			<div id="wrapper">
 
-				<!-- Nav -->
+				<!-- 上方按鈕 -->
 					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>line&scatter</span></a>
-						<!-- <a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a> -->
-						<!-- <a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a> -->
+						<a href="#" class="icon solid fa-home"><span>主頁</span></a>
+						<a href="#work1" class="icon solid fa-folder"><span>line&scatter</span></a>
+						<a href="#work2" class="icon solid fa-folder"><span>BarChart</span></a>
+						<a href="#work3" class="icon solid fa-folder"><span>PieChart</span></a>
+						<a href="#work4" class="icon solid fa-folder"><span>作業總結</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -27,104 +28,169 @@
 							<article id="home" class="panel intro">
 								<header>
 									<h1>110502503 顏婕葳</h1>
-									<p>Homework</p>
+									<p>資料視覺化 期中作業</p>
 								</header>
-								<a href="#work" class="jumplink pic">
+								<a href="#work1" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="portfolio-1/images/me.jpg" alt="" />
+									<img src="portfolio-1/images/kalahi.jpg" alt="" />
 								</a>
 							</article>
 
-						<!-- Work -->
-							<article id="work" class="panel">
+						<!-- Work1 -->
+							<article id="work1" class="panel">
 								<header>
 									<h2>Line & Scatter</h2>
+									
 								</header>
 								<p>
-									<!-- Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum. -->
+									<strong>資料 : </strong>臺中焚化廠 戴奧辛濃度折線圖<br>
+									資料來源：<a href="https://data.gov.tw/dataset/160104" target="_blank">臺中市焚化廠飛灰穩定化物檢測結果</a>
+									<br>
+									<br>
+									<strong>製作方法說明：</strong><br>
+									基本的html匯入後，分別將三個焚化廠的第一到五筆資料放入data.js中的set1,2,3中，接著在main.js檔案中處理這三筆資料，分別為trace1,2,3，並利用for迴圈將data.js的資料set放到trace的x及y值中，最後將這三個trace push到我們要呈現的hw1_data中，並利用plotly函式呈現出來。<br>
+									<strong>洞悉：</strong><br>
+									在main.js中這三筆資料的mode我都用lines+markers+text，因為我認為這樣更能清楚呈現每筆資料完整的資訊；且在最後的layout中，調整了y軸的範圍，使得更好觀察三筆資料的比較結果
+								
 								</p>
-								<div id="myGraph"></div>
+
+								<div id="myGraph_hw1"></div>
 								<section>
 									<div class="row">
+										
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="portfolio-1/images/pic01.jpg" alt=""></a>
+											<a href="#work2" class="jumplink pic">
+												<span ><span><br>BarChart</span></span><br>
+												<img src="portfolio-1/images/ka4.jpg" alt="" />
+												
+											</a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="portfolio-1/images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="portfolio-1/images/pic03.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="portfolio-1/images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="portfolio-1/images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="portfolio-1/images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="portfolio-1/images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="portfolio-1/images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="portfolio-1/images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="portfolio-1/images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="portfolio-1/images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="portfolio-1/images/pic12.jpg" alt=""></a>
-										</div>
+										
 									</div>
 								</section>
+								
+								
+								
 							</article>
-
-
 							
-						<!-- Contact -->
-							<article id="contact" class="panel">
+
+						<!-- work2 -->
+							<article id="work2" class="panel">
 								<header>
-									<h2>Contact Me</h2>
+									<h2>Bar Chart</h2>
+									
 								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
+								<p>
+									<strong>資料 : </strong>臺北市及高雄市 立法委員加市議員 男女比<br>
+									資料來源：<a href="https://data.gov.tw/dataset/138481" target="_blank">臺北市民意代表人數</a><br>
+									資料來源：<a href="https://www.kcc.gov.tw/Member_List3.aspx?n=39&sms=9028" target="_blank">高雄市市議員人數</a>
+									<br>
+									<br>
+									<strong>製作方法說明：</strong><br>
+									html架設好後，我將台北市的立法委員加市議員作為第一筆資料，高雄市的立法委員加市議員作為第二筆資料，個別再分成男性及女性的人數，
+									並將資料分別給main.js中的trace1及trace2，並將trace的type設為bar長條圖，最後將trace push到我們要顯示的hw2_data，接著在layout的地方指定barmode為stack堆疊顯示，利用plotly函示將長條圖顯示出來<br>
+									<strong>洞悉：</strong><br>
+									在這部分我認為難點在於，老師上課所說的，將同一個set的資料推疊起來，花了我一些時間理解，過程中也搞錯index；
+									透過這張圖表我們也可以發現，在台北市的民意代表男女比率有趨近的趨勢，不再一定是以男性候選人為主，但因為高雄的區較多，可以發現依然是男性當選人占多數。
+								</p>
+								
+								<div id="myGraph_hw2"></div>
+								<section>
+									<div class="row">
+										
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#work3" class="jumplink pic">
+												<span ><span><br>PieChart</span></span><br>
+												<img src="portfolio-1/images/ka2.jpg" alt="" />
+												
+											</a>
 										</div>
+										
 									</div>
-								</form>
+								</section>
+								
+								
+								
+							</article>
+						
+							<!-- work3 -->
+							<article id="work3" class="panel">
+								<header>
+									<h2>Pie Chart</h2>
+									
+								</header>
+								<p>
+									<strong>資料 : </strong> 111年 政府派遣出國訪問<br> 
+									資料來源：<a href="https://data.gov.tw/dataset/151187" target="_blank">政府出國訪問人數</a>
+									<br>
+									<br>
+									<strong>製作方法說明：</strong><br>
+									html匯入後，我將data中亞太地區、亞非地區、歐洲地區、北美地區，訂為是set，其中再分別放入政府官員、民意代表、學術界人士的人數；
+									在main.js中將trace的type訂為pie(圓餅圖)，並將data.js的資料利用for迴圈放入trace的labels(職位)及values(數量)中，
+									並在後面設定trace.hole的屬性，使圓餅圖變成甜甜圈的方式呈現，再將trace push到我們要顯示的hw3_data中，最後利用plotly函式將結果顯示出來。<br>
+									<strong>洞悉：</strong><br>
+									在此圖中，可以發現台灣111年的政府出訪還是以亞太地區為主，總人數有189人，相較之下亞非地區就少了許多，可見政府主要的外交互動區域以亞太及歐洲地區為主；
+									更可以發現由政府派遣的學術界人士只前往了亞太地區和歐洲地區；又出國派遣的人員主要還是政治人物或是公務人員，我認為應該要給更多的名額給學者，甚至是藝術家，
+									讓他們推廣台灣的學術及藝術，也可以多與其他國家進行交流。
+								
+								</p>
+								
+								<div id="myGraph_hw3"></div>
+								<section>
+									<div class="row">
+										
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#work4" class="jumplink pic">
+												<span ><span><br>作業心得</span></span><br>
+												<img src="portfolio-1/images/ka3.jpg" alt="" />
+												
+											</a>
+										</div>
+										
+									</div>
+								</section>
+								
+								
+								
 							</article>
 
-					</div>
+							<!-- work4 -->
+							<article id="work4" class="panel">
+								<header>
+									<h2>作業心得</h2>
+									
+								</header>
+								<p>
+									在做這份作業的過程中，起初我遇到了無法將我的三個作業丟上網頁的問題，透過老師的指點，再加上開管理員一行一行地細看，
+									分別將wrapper nav main展開來看，甚至到後來我又重新載入一次原本的模板，對照著看，一步一步解決問題，當中我也慢慢學習到了html的一些語法、架構及原理，
+									再自己上網補充一些超連結、換行、文字的強調語法，套用在這次的作業中；<br>
+									接著遇到的問題就是老師有說過的檔名問題，因為他們都會匯入到一起，一開始以為只要改trace即可，後來網頁依舊跑不出東西，搭配著管理員debug加上不斷的嘗試，
+									最後發現不只trace要改，data、layout、myGraph這些名稱都要不同，不然會被重複定義，就會出錯。<br>
+									在這次的作業中，我不只學會了課堂上老師教的將檔案轉成圖表，將這些資料視覺化的方式，也讓即使是資工系但是第一次寫網頁的我，有了html的初步認知，也學習到了好多，發覺寫網頁原來是一件那麼酷的事情。
+									<br><br><br><br>圖片來源：<br>
+									<a href="https://gnn.gamer.com.tw/detail.php?sn=245818" ctarget="_blank">主頁圖片</a><br>
+									<a href="https://m.win3000.com/mbizhi/3955_4.html" ctarget="_blank">Line&Scatter下方圖片</a><br>
+									<a href="https://m.win3000.com/mbizhi/3955_9.html" ctarget="_blank">BarChart下方圖片</a><br>
+									<a href="https://www.s3.com.tw/look/wallpaper/eno3v7/page/9839" ctarget="_blank">PieChart下方圖片</a><br>
+										
+									</a>
+								</p>
+								
+								<div id="myGraph_hw3"></div>
+								<section>
+									<div class="row">
+										
+										<div class="col-4 col-6-medium col-12-small">
+										</div>
+										
+									</div>
+								</section>
+								
+								
+								
+							</article>
+						
 
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
 					</div>
 
 			</div>
@@ -135,9 +201,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
-			<script src="hw1/data.js"></script>
-			<script src="hw1/main.js"></script>
+			<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+			<script src="portfolio-1/hw1/data.js"></script>
+			<script src="portfolio-1/hw1/main.js"></script>
+			<script src="portfolio-1/hw2/data.js"></script>
+			<script src="portfolio-1/hw2/main.js"></script>
+			<script src="portfolio-1/hw3/data.js"></script>
+			<script src="portfolio-1/hw3/main.js"></script>
+
 
 	</body>
 </html>

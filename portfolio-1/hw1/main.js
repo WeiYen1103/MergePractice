@@ -1,87 +1,87 @@
-let myGraph = document.getElementById('myGraph');
+let myGraph_hw1 = document.getElementById('myGraph_hw1');
 
 //1
-let trace1 ={};
-trace1.mode ="lines+markers+text";
-trace1.type ="scatter";
-trace1.name="文山資源回收焚化廠";
-trace1.visible=true;
-trace1.marker={
+let hw1_trace1 ={};
+hw1_trace1.mode ="lines+markers+text";
+hw1_trace1.type ="scatter";
+hw1_trace1.name="文山資源回收焚化廠";
+hw1_trace1.visible=true;
+hw1_trace1.marker={
     size:10
 };
-trace1.x =[];
-trace1.y =[];
-trace1.text=[];
-trace1.textposition="bottom center";
-trace1.textfont={
+hw1_trace1.x =[];
+hw1_trace1.y =[];
+hw1_trace1.text=[];
+hw1_trace1.textposition="bottom center";
+hw1_trace1.textfont={
     family:"Raleway, sans-serif",
     size:10
 };
 
 
 //2
-let trace2={};
-trace2.mode ="lines+markers+text";
-trace2.type ="scatter";
-trace2.name="烏日資源回收焚化廠";
-trace2.visible=false;
-trace2.line={
+let hw1_trace2={};
+hw1_trace2.mode ="lines+markers+text";
+hw1_trace2.type ="scatter";
+hw1_trace2.name="烏日資源回收焚化廠";
+hw1_trace2.visible=false;
+hw1_trace2.line={
     color:'red'
 };
-trace2.marker={
+hw1_trace2.marker={
     size:10
 };
-trace2.x =[];
-trace2.y =[];
-trace2.text=[];
-trace2.textposition="top";
-trace2.textfont={
+hw1_trace2.x =[];
+hw1_trace2.y =[];
+hw1_trace2.text=[];
+hw1_trace2.textposition="top";
+hw1_trace2.textfont={
     family:"Raleway, sans-serif",
     size:10
 };
 
 //3
-let trace3={};
-trace3.mode ="lines+markers+text";
-trace3.type ="scatter";
-trace3.name="后里資源回收焚化廠";
-trace3.visible=false;
-trace3.line ={
-    colore:'green',
+let hw1_trace3={};
+hw1_trace3.mode ="lines+markers+text";
+hw1_trace3.type ="scatter";
+hw1_trace3.name="后里資源回收焚化廠";
+hw1_trace3.visible=false;
+hw1_trace3.line ={
+    color:'green',
     shape:'spline'
 };
-trace3.marker={
+hw1_trace3.marker={
     size:10
 };
-trace3.x =[];
-trace3.y =[];
-trace3.text=[];
-trace3.textposition="top";
-trace3.textfont={
+hw1_trace3.x =[];
+hw1_trace3.y =[];
+hw1_trace3.text=[];
+hw1_trace3.textposition="top";
+hw1_trace3.textfont={
     family:"Raleway, sans-serif",
     size:10
 };
 
 for(let i=0;i<set1.length;i++){
-    trace1.x[i] = set1[i][0];
-    trace1.y[i] = set1[i][1];
-    trace1.text[i] = set1[i][2];
+    hw1_trace1.x[i] = set1[i][0];
+    hw1_trace1.y[i] = set1[i][1];
+    hw1_trace1.text[i] = set1[i][2];
 }
 for(let i=0;i<set2.length;i++){
-    trace2.x[i] = set2[i][0];
-    trace2.y[i] = set2[i][1];
-    trace2.text[i] = set2[i][2];
+    hw1_trace2.x[i] = set2[i][0];
+    hw1_trace2.y[i] = set2[i][1];
+    hw1_trace2.text[i] = set2[i][2];
 }
 for(let i=0;i<set3.length;i++){
-    trace3.x[i] = set3[i][0];
-    trace3.y[i] = set3[i][1];
-    trace3.text[i] = set3[i][2];
+    hw1_trace3.x[i] = set3[i][0];
+    hw1_trace3.y[i] = set3[i][1];
+    hw1_trace3.text[i] = set3[i][2];
 }
 
 let data = [];
-data.push(trace1);
-data.push(trace2);
-data.push(trace3);
+data.push(hw1_trace1);
+data.push(hw1_trace2);
+data.push(hw1_trace3);
 
 
 let layout={
@@ -126,4 +126,4 @@ let layout={
     ]
 };
 
-Plotly.newPlot(myGraph, data,layout); //newPlot中要有三個參數(名稱，資料array，排列的方式)
+Plotly.newPlot(myGraph_hw1, data,layout); //newPlot中要有三個參數(名稱，資料array，排列的方式)
